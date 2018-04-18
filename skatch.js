@@ -117,7 +117,7 @@ class Bird{
      this.fallM += .05;
 
      //das fallen des Vogels um 1.5 px/frame ..... multiplizirt mit der beschläunigung
-     this.h += 1.5*this.fallM;
+     this.h += 1*this.fallM;
      this.drawBird();
    }
 
@@ -148,7 +148,10 @@ var bars = [5];
 
 //Wird am anfang 1 mal aufgerufen
 function setup() {
+  frameRate(60);
+  
   //hitergrundFarbe
+
     background(0);
     //größe des Spielbereiches
     createCanvas(height,width);
